@@ -31,6 +31,10 @@ class ComposerStaticInitb8cb155a997faf8b3dab2836e8e54705
         array (
             'Model\\' => 6,
         ),
+        'H' => 
+        array (
+            'HandleError\\' => 12,
+        ),
         'G' => 
         array (
             'GrahamCampbell\\ResultType\\' => 26,
@@ -70,6 +74,10 @@ class ComposerStaticInitb8cb155a997faf8b3dab2836e8e54705
         'Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/models',
+        ),
+        'HandleError\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/handleError',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (

@@ -12,6 +12,7 @@ return array(
     'QueryBuilder\\' => array($baseDir . '/queryBuilder'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
     'Model\\' => array($baseDir . '/models'),
+    'HandleError\\' => array($baseDir . '/handleError'),
     'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Controller\\' => array($baseDir . '/controllers'),

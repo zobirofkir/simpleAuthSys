@@ -1,35 +1,23 @@
 <?php
 namespace Controller;
 
-use Model\Login;
+use Controller\Controller;
 
-class LoginController 
+class LoginController extends Controller
 {
-    private $model;
-    public function __construct()
-    {
-        $this->model = new Login();
-    }
-
+    
     public function login()
-    {
-        if (!$_SERVER['REQUEST_METHOD'] === "POST")
-        {
-            return false;
-        }
-        $data = file_get_contents('php://input');
-        $array = json_decode($data, true);
-        $username = htmlspecialchars($array['username']);
-        $password = $array['password'];
+    {      
+        parent::login();  
+        $username = htmlspecialchars($this->array["username"]);
+        $password = $this->array["password"];
         $handleLogin = $this->model->login($username, $password);
         if ($handleLogin)
         {
-            $response = ['success'=>true];
-            echo json_encode($response);
+            $this->handleRequest->handleMessage(true);
             return;
         }
-        $response = ['success'=>false];
-        echo json_encode($response);
+        $this->handleRequest->handleMessage(false);
         return;
     }
 }
