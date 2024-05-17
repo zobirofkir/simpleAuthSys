@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "controllers/",
+            "Model\\": "models/",
+            "Config\\":"config/",
+            "QueryBuilder\\": "queryBuilder/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
