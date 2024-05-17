@@ -26,10 +26,12 @@ class ComposerStaticInitb8cb155a997faf8b3dab2836e8e54705
         'P' => 
         array (
             'PhpOption\\' => 10,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
             'Model\\' => 6,
+            'Mail\\' => 5,
         ),
         'H' => 
         array (
@@ -65,19 +67,27 @@ class ComposerStaticInitb8cb155a997faf8b3dab2836e8e54705
         ),
         'QueryBuilder\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/queryBuilder',
+            0 => __DIR__ . '/../..' . '/App/queryBuilder',
         ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'Model\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/models',
+            0 => __DIR__ . '/../..' . '/App/models',
+        ),
+        'Mail\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Mail',
         ),
         'HandleError\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/handleError',
+            0 => __DIR__ . '/../..' . '/App/handleError',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (
@@ -89,7 +99,7 @@ class ComposerStaticInitb8cb155a997faf8b3dab2836e8e54705
         ),
         'Controller\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/controllers',
+            0 => __DIR__ . '/../..' . '/App/controllers',
         ),
         'Config\\' => 
         array (

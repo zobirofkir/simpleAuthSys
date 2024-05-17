@@ -7,13 +7,13 @@ use Model\Register;
 
 class RegisterController extends Controller
 {
-    private $username;
-    private $email;
-    private $password;
+    protected $username;
+    protected $email;
+    protected $password;
 
     public function create()
     {
-        parent::create();
+        parent::register();
         
         $this->username = htmlspecialchars($this->array["username"]);
         $this->email = htmlspecialchars($this->array["email"]);
@@ -29,6 +29,7 @@ class RegisterController extends Controller
         if ($handle)
         {
             $this->handleRequest->handleMessage(true);
+            $this->sendEm->sendEmail();
             return;
         }
     }

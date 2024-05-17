@@ -2,26 +2,28 @@
 namespace Controller;
 
 use HandleError\HandleError;
+use Mail\Mailer;
 use Model\Login;
 use Model\Register;
 
 class Controller 
 {
     protected $model;
-    protected array $array = [];
+    public array $array = [];
     protected $data;
     protected $db;
     protected $handleRequest;
+    protected $sendEm;
 
     public function __construct()
     {
         $this->model = new Login();
         $this->db = new Register();  
         $this->handleRequest = new HandleError(); 
-
+        $this->sendEm = new Mailer();
     }
 
-    public function create()
+    public function register()
     {
         if (!$_SERVER['REQUEST_METHOD'] === 'POST')
         {

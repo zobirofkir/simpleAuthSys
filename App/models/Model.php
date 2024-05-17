@@ -10,7 +10,7 @@ class Model
     {
         $this->query = new QueryBuilder();
     }
-    public function store($table, $data)
+    public function register($table, $data)
     {
         return $this->query->insert($table, $data);
     }

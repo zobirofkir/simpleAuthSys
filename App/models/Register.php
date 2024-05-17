@@ -15,7 +15,7 @@ class Register extends Model
             'password' => $password
         ];
 
-        return $this->store($this->table, $fields);
+        return $this->register($this->table, $fields);
     }
 
     public function existingEmail($email)
